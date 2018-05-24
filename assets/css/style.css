@@ -1,0 +1,308 @@
+/* Fonts */
+@font-face {
+    font-family: 'KelsonSans';
+    src:url('../webfonts/Kelson_Sans_Light.woff2') format('woff2'),
+        url('../webfonts/Kelson_Sans_Light.woff') format('woff'),
+        url('../webfonts/Kelson_Sans_Light.otf') format('opentype');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'KelsonSans';
+    src:url('../webfonts/Kelson_Sans_Regular.woff2') format('woff2'),
+        url('../webfonts/Kelson_Sans_Regular.woff') format('woff'),
+        url('../webfonts/Kelson_Sans_Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-Light.woff2') format('woff2'),
+        url('../webfonts/OpenSans-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-LightItalic.woff2') format('woff2'),
+        url('../webfonts/OpenSans-LightItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../webfonts/OpenSans-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-Italic.woff2') format('woff2'),
+        url('../webfonts/OpenSans-Italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../webfonts/OpenSans-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src:url('../webfonts/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../webfonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+
+:root {
+
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'KelsonSans';
+  margin: 0;
+}
+
+.header__main {
+  margin: 50px auto;
+  width: 512px;
+}
+
+.header__title {
+  color: tomato;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__search {
+  border-bottom: 1px solid #999;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  padding: 10px 2%;
+  width: 96%;
+}
+
+.form__submit {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  font-family: 'fontawesome';
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.header__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cards {
+  margin: 50px auto;
+  padding: 0;
+  width: 512px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+  list-style: none;
+  margin-bottom: 100px;
+  width: inherit;
+}
+
+.card__highlight {
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.card--open .card__highlight {
+  height: 512px;
+}
+
+.card__content {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  min-height: 76px;
+  position: relative;
+  transition: min-height .5s;
+}
+
+.card--open .card__content {
+  min-height: 100px;
+}
+
+.card__profile-container {
+  left: 20px;
+  opacity: 0;
+  position: absolute;
+  top: -125px;
+  transition: all .25s ease-in-out;
+  width: 120px;
+}
+
+.card--open .card__profile-container {
+  opacity: 1;
+  top: -85px;
+}
+
+.card__profile {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  transition: all .25s ease-in;
+  width: 100%;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  transition: all .25s ease-in;
+  top: 0;
+  width: 350px;
+}
+
+.card--open .card__title {
+  clear: both;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,.75);
+  top: -60px;
+}
+
+.card__author {
+  opacity: 0;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .25s;
+  width: 350px;
+}
+
+.card--open .card__author {
+  opacity: 1;
+}
+
+.card__author-name {
+  font-weight: 200;
+  text-align: right;
+}
+
+.card__like {
+  color: #ccc;
+  display: block;
+  padding: 28px 0 0 20px;
+  text-align: center;
+  transition: all .35s ease-out;
+  width: 120px;
+}
+
+.card--open .card__like {
+  padding-top: 55px;
+}
+
+.card__like--red {
+  color: tomato;
+}
+
+.card__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.card--open .card__hidden {
+  height: 250px;
+}
+
+.social {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  font-size: .9rem;
+  margin: 40px 10% 20px;
+  padding: 10px 0;
+  text-align: center;
+  width: 80%;
+}
+
+.social__element {
+  display: inline-block;
+  margin: 0 2em;
+  text-align: center;
+}
+
+.social__number,
+.social__text {
+  font-family: 'Open Sans';
+}
+
+
+.social__number {
+  font-size: 2.1em;
+  font-weight: 400;
+}
+
+.social__text {
+  color: #888;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.card__follow-btn {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-family: 'Open Sans';
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 20px 10%;
+  padding: 15px 0;
+  width: 80%;
+}
+
+.card__follow-btn:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.card__follow-btn--following {
+  background-color: tomato;
+  color: white;
+}
+
+.card__follow-btn--following:hover {
+  background-color: red;
+}
