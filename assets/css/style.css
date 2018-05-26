@@ -306,3 +306,117 @@ body {
 .card__follow-btn--following:hover {
   background-color: red;
 }
+
+.create {
+  margin: 50px auto;
+  max-width: 512px;
+}
+
+.create__form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+
+.create__title {
+  color: tomato;
+  text-align: center;
+}
+
+.create__display_images {
+  clear: both;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.create__profile,
+.create__image {
+  float: left;
+  margin: 0 1%;
+  width: 48%;
+}
+
+.create__img {
+  width: 100%;
+}
+
+.create__label {
+  clear: both;
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  margin: 10px 0;
+}
+
+.create__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 0;
+  border: 1px solid #ccc;
+  line-height: 1em;
+  outline: none;
+
+  font-size: 1em;
+  padding: 15px 1%;
+  width: 97%;
+}
+
+.create__input:focus {
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.create__placeholder {
+  bottom: 19px;
+  color: #aaa;
+  font-size: 1em;
+  left: 5px;
+  line-height: 1em;
+  opacity: 1;
+  position: absolute;
+  transition: all .25s;
+}
+
+.create__input:focus + .create__placeholder {
+  bottom: 40px;
+  color: tomato;
+}
+
+.create__input:valid + .create__placeholder {
+  opacity: 0;
+}
+
+.create__label--select {
+  display: inline-block;
+  float: left;
+  margin-right: 1%;
+  width: 48%;
+}
+
+.create__label--select:nth-child(odd) {
+  margin-left: 1%;
+}
+
+.create__select {
+  width: 100%;
+}
+
+.create__submit {
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 20px 0;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.create__submit:hover {
+  background-color: red;
+}

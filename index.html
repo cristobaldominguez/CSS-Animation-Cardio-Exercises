@@ -145,6 +145,77 @@
 
   </ul>
 
+  <section class="create">
+    <h2 class="create__title">Crea un landscape</h2>
 
+    <form action="#" class="create__form" autocomplete="off">
+      <label for="name" class="create__label">
+        <input type="text" name="name" class="create__input" id="name" required>
+        <span class="create__placeholder">Título</span>
+      </label>
+
+      <div class="create__display_images">
+        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
+        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
+
+        <label for="image" class="create__label--select">
+          <select name="image" id="image" class="create__select">
+            <option value="uk.png">Seleccione una Imagen</option>
+            <option value="01.jpg">imagen 01</option>
+            <option value="02.jpg">imagen 02</option>
+            <option value="03.jpg">imagen 03</option>
+            <option value="04.jpg">imagen 04</option>
+            <option value="05.jpg">imagen 05</option>
+            <option value="06.jpg">imagen 06</option>
+            <option value="07.jpg">imagen 07</option>
+            <option value="08.jpg">imagen 08</option>
+            <option value="09.jpg">imagen 09</option>
+            <option value="10.jpg">imagen 10</option>
+            <option value="11.jpg">imagen 11</option>
+            <option value="12.jpg">imagen 12</option>
+            <option value="13.jpg">imagen 13</option>
+            <option value="14.jpg">imagen 14</option>
+            <option value="15.jpg">imagen 15</option>
+            <option value="16.jpg">imagen 16</option>
+            <option value="17.jpg">imagen 17</option>
+            <option value="18.jpg">imagen 18</option>
+            <option value="19.jpg">imagen 19</option>
+            <option value="20.jpg">imagen 20</option>
+          </select>
+        </label>
+
+        <label for="author" class="create__label--select">
+          <select name="author" id="author" class="create__select">
+            <option value="uk.png">Seleccione un Autor</option>
+            <option value="she.jpg">Margot Robbie</option>
+            <option value="he.jpg">Ryan Reynolds</option>
+            <option value="mr.jpg">Barack Obama</option>
+            <option value="fl.jpg">Florcita Motuda</option>
+          </select>
+        </label>
+
+      </div>
+
+      <label for="followers" class="create__label">
+        <input type="text" name="followers" class="create__input" id="followers" required>
+        <span class="create__placeholder">Followers</span>
+      </label>
+
+      <label for="likes" class="create__label">
+        <input type="text" name="likes" class="create__input" id="likes" required>
+        <span class="create__placeholder">Likes</span>
+      </label>
+
+      <label for="following" class="create__label">
+        <input type="text" name="following" class="create__input" id="following" required>
+        <span class="create__placeholder">Following</span>
+      </label>
+
+      <input type="submit" value="Add" class="create__submit">
+    </form>
+  </section>
+
+  <script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/functions.js"></script>
 </body>
 </html>
