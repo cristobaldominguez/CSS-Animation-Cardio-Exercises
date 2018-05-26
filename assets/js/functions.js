@@ -1,17 +1,19 @@
 jQuery(function(){
 
-  $('.card').on('click', function(event) {
+  $('.cards').on('click', '.card', function(event) {
     $(this).toggleClass('card--open');
   });
 
-  $('.card__like').on('click', function(event) {
+  $('.cards').on('click', '.card__like', function(event) {
     event.stopPropagation();
     event.preventDefault();
+
     $(this).toggleClass('card__like--red');
   });
 
-  $('.card__follow-btn').on('click', function(event) {
+  $('.cards').on('click', '.card__follow-btn', function(event) {
     event.stopPropagation();
+
     const _this = $(this);
     _this.toggleClass('card__follow-btn--following');
 

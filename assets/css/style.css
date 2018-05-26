@@ -66,22 +66,19 @@
     font-weight: 600;
 }
 
-
-
-
-:root {
-
-}
-
 body {
   background-color: #f9f9f9;
-  font-family: 'KelsonSans';
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+h1,h2,h3 {
+  font-family: 'KelsonSans';
 }
 
 .header__main {
   margin: 50px auto;
-  width: 512px;
+  max-width: 512px;
 }
 
 .header__title {
@@ -114,7 +111,6 @@ body {
 }
 
 .header__description {
-  font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   color: #555;
 }
@@ -122,7 +118,7 @@ body {
 .cards {
   margin: 50px auto;
   padding: 0;
-  width: 512px;
+  max-width: 512px;
 }
 
 .card {
